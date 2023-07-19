@@ -1,5 +1,6 @@
 "use client"
 
+import { AuthModal } from "@/components/AuthModal";
 import { useEffect, useState } from "react";
 
 const ModalProvider = () => {
@@ -16,7 +17,7 @@ const ModalProvider = () => {
     
     return (
         <>
-            Modals!
+            <AuthModal/>
         </>
     );
 }
