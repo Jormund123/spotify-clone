@@ -98,7 +98,7 @@ export const UploadModal: React.FC<{}> = () => {
         <Modal title = "Add a song" description = "Upload an MP3 File" isOpen = {uploadModal.isOpen} onChange = {onChange}>
             <form className = "flex flex-col gap-y-4" onSubmit = {handleSubmit(onSubmit)}>
                 <Input id = "title" disabled={isLoading} {...register('title', {required: true})} placeholder = "Song Title" />
-                <Input id = "Author" disabled={isLoading} {...register('Author', {required: true})} placeholder = "Song Author" />
+                <Input id = "author" disabled={isLoading} {...register('author', {required: true})} placeholder = "Song Author" />
                 <div>
                     <div className = "pb-1" >
                         Select a song file
